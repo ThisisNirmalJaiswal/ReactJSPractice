@@ -4,7 +4,7 @@ import './index.css';
 
 import { books } from './books';
 import Book from './Book';
-
+console.log(books);
 const BookList = () => {
   return (
     <section className='booklist'>
