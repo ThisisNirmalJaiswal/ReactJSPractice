@@ -17,52 +17,37 @@ const books = [
   },
 ];
 
-// how to render a list of names or any data
-
-// const names = ['nirmal', 'ajay', 'vikash'];
-
-// const newNames = names.map((name) => {
-//   console.log(names);
-//   return <h1>{name}</h1>;
-// });
 const BookList = () => {
   return (
     <section className='booklist'>
+      <EventExamples />
       {books.map((book) => {
         const { img, title, author, id } = book;
         return <Book {...book} key={id} />;
-        {
-          /* return <Book book={book} key={id} />; */
-        }
       })}
     </section>
   );
 };
 
-// 1st option
-// const Book = (props) => {
-//   const { img, title, author } = props.book;
-//   return (
-//     <article className='book'>
-//       <img src={img} alt={title} />
-//       <h2>{title}</h2>
-//       <h2>{author}</h2>
-//     </article>
-//   );
-// };
+const EventExamples = () => {
+  const handleFormInput = () => {
+    console.log('handle form input');
+  };
 
-// 2nd option
-// const Book = ({ book: { img, title, author } }) => {
-//   return (
-//     <article className='book'>
-//       <img src={img} alt={title} />
-//       <h2>{title}</h2>
-//       <h2>{author}</h2>
-//     </article>
-//   );
-// };
+  const handleButtonClick = () => {
+    alert('handle button clicked');
+  };
+  return (
+    <section>
+      <form>
+        <h2>Typical Form</h2>
+        <input type='text' name='example' style={{ margin: '1rem 0' }} />
+      </form>
+      <button onClick={handleButtonClick}>Click me</button>
+    </section>
+  );
+};
 
-// 3rd option using spread operator
 const Book = (props) => {
   const { img, title, author } = props;
   return (
