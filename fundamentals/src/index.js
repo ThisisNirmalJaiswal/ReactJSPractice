@@ -26,19 +26,9 @@ const Book = () => {
       <img src={img} alt={title} />
       <h2>{title}</h2>
       <h4>{author}</h4>
-      {/* <p>{let p = 6 }</p> // it will doesn't work bcuz it not a value. */}
-      {/* <p>{6 + 6}</p> // it will work bcuz it's have some value. */}
     </article>
   );
 };
-
-// const Author = () => {
-//   return (inlineHeadingsStyle = {
-//     color: '#617d98',
-//     fontSize: '0.75rem',
-//     marginTop: '0.5rem',
-//   });
-// };
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
