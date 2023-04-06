@@ -2,18 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 
-// function Greeting() {
-//   return (
-//     <>
-//       <Person />
-//       <Message />
-//     </>
-//   );
-// }
-
 const BookList = () => {
   return (
-    <section>
+    <section className='booklist'>
+      <Book />
+      <Book />
+      <Book />
       <Book />
       <Book />
       <Book />
@@ -23,7 +17,7 @@ const BookList = () => {
 
 const Book = () => {
   return (
-    <article>
+    <article className='book'>
       <Image />
       <Title />
       <Author />
@@ -33,7 +27,11 @@ const Book = () => {
 
 const Image = () => {
   return (
-    <img src='https://images-na.ssl-images-amazon.com/images/I/81WZ6QvGZ2L._AC_UL600_SR600,400_.jpg' />
+    <img
+      src='./images/book.jpg'
+      alt="It's Not Easy Being a Bunny: An Easter Book for Kids and Toddlers (Beginner
+    Books(R))"
+    />
   );
 };
 const Title = () => (
@@ -43,15 +41,6 @@ const Title = () => (
   </h2>
 );
 const Author = () => <h4> Marilyn Sadler</h4>;
-
-// const Person = () => <h2>Nirmal Jaiswal</h2>;
-// const Message = () => {
-//   return <p>This is my Message</p>;
-// };
-
-// function Greeting() {
-//   return React.createElement('h2', {}, 'hellow World');
-// }
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
