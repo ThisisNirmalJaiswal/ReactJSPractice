@@ -36,6 +36,8 @@ const UseStateBasics = () => {
   // console.log(func);
 
   const [count, setCount] = useState(0);
+  // const [name, setName] = React.useState();
+
   const handleClick = () => {
     setCount(count + 1);
   };
