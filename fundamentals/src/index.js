@@ -23,7 +23,16 @@ const BookList = () => {
         author={firstBook.author}
         title={firstBook.title}
         img={firstBook.img}
-      ></Book>
+      >
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos in
+          veritatis beatae eos dignissimos necessitatibus quasi, error
+          aspernatur quibusdam quis. Ullam saepe voluptates laborum magni
+          repudiandae aliquam perferendis, doloribus modi!
+        </p>
+
+        <button>Click me</button>
+      </Book>
       <Book
         author={secondBook.author}
         title={secondBook.title}
@@ -47,13 +56,14 @@ const BookList = () => {
 // };
 
 // second method of using props by destructure
-const Book = ({ title, img, author }) => {
+const Book = ({ title, img, author, children }) => {
   //   const { title, img, author } = props;
   return (
     <article className='book'>
       <img src={img} alt={title} />
       <h2>{title}</h2>
       <h4>{author}</h4>
+      {children}
     </article>
   );
 };
