@@ -4,7 +4,7 @@ import viteLogo from '/vite.svg';
 import './App.css';
 
 function App() {
-  return <h1>Vite Project</h1>;
+  return <h1>Advanced React</h1>;
 }
 
 export default App;
