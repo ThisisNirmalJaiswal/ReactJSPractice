@@ -1,13 +1,5 @@
 # React Fundamentals
 
-#### React Course
-
-[My React Course](https://www.udemy.com/course/react-tutorial-and-projects-course/?referralCode=FEE6A921AF07E2563CEF)
-
-#### Support
-
-Find the Content Useful? [You can always buy me a coffee](https://www.buymeacoffee.com/johnsmilga)
-
 #### Folder Structure
 
 - node_modules
@@ -35,7 +27,6 @@ Find the Content Useful? [You can always buy me a coffee](https://www.buymeacoff
 - README
   The markdown file where you can share more info about the project for example build instructions and summary
 
-- zoom 175%
 
 #### Remove Boilerplate
 
