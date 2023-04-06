@@ -40,11 +40,15 @@ const Title = () => (
     Books(R))
   </h2>
 );
-const Author = () => (
-  <h4 style={{ color: '#617d98', fontSize: '0.75rem', marginTop: '0' }}>
-    Marilyn Sadler
-  </h4>
-);
+const Author = () => {
+  const inlineHeadingsStyle = {
+    color: '#617d98',
+    fontSize: '0.75rem',
+    marginTop: '0.5rem',
+  };
+
+  return <h4 style={inlineHeadingsStyle}>Marilyn Sadler</h4>;
+};
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
