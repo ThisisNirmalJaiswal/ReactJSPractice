@@ -30,14 +30,6 @@ const BookList = () => {
 };
 
 const EventExamples = () => {
-  const handleButtonClick = () => {
-    alert('handle button clicked');
-  };
-
-  const handleFormSubmission = (e) => {
-    e.preventDefault();
-    console.log('Form Submitted');
-  };
   return (
     <section>
       <form>
@@ -63,10 +55,14 @@ const EventExamples = () => {
 
 const Book = (props) => {
   const { img, title, author } = props;
+  const displayTitle = () => {
+    console.log(title);
+  };
   return (
     <article className='book'>
       <img src={img} alt={title} />
       <h2>{title}</h2>
+      <button onClick={displayTitle}>Display Title</button>
       <h2>{author}</h2>
     </article>
   );
