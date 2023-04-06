@@ -1,4 +1,4 @@
-import Final from './tutorial/01-useState/final/01-error-example';
+import Final from './tutorial/01-useState/final/02-useState-basics';
 
 function App() {
   return (
