@@ -1,10 +1,11 @@
-import { useState } from 'react';
-import reactLogo from './assets/react.svg';
-import viteLogo from '/vite.svg';
-import './App.css';
+import Final from './tutorial/01-useState/final/01-error-example';
 
 function App() {
-  return <h1>Advanced React</h1>;
+  return (
+    <div className='container'>
+      <Final />
+    </div>
+  );
 }
 
 export default App;
