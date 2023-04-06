@@ -10,22 +10,18 @@ const img = './images/book.jpg';
 const BookList = () => {
   return (
     <section className='booklist'>
-      <Book />
-      <Book />
-      <Book />
-      <Book />
-      <Book />
-      <Book />
+      <Book author={author} title={title} img={img} />
+      <Book author={author} title={title} img={img} />
     </section>
   );
 };
 
-const Book = () => {
+const Book = (props) => {
   return (
     <article className='book'>
-      <img src={img} alt={title} />
-      <h2>{title}</h2>
-      <h4>{author}</h4>
+      <img src={props.img} alt={props.title} />
+      <h2>{props.title}</h2>
+      <h4>{props.author}</h4>
     </article>
   );
 };
