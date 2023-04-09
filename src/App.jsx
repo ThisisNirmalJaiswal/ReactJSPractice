@@ -1,4 +1,4 @@
-import Final from './tutorial/02-useEffect/final/02-useEffect-basics';
+import Final from './tutorial/02-useEffect/final/03-multiple-effects';
 
 function App() {
   return (
