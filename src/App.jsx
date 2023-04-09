@@ -1,8 +1,8 @@
-import Final from './tutorial/01-useState/final/02-useState-basics';
+import Final from './tutorial/01-useState/final/03-useState-array';
 
 function App() {
   return (
-    <div className='container'>
+    <div>
       <Final />
     </div>
   );
