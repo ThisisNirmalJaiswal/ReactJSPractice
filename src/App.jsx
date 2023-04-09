@@ -1,4 +1,4 @@
-import Final from './tutorial/01-useState/final/02-useState-basics';
+import Final from './tutorial/02-useEffect/final/02-useEffect-basics';
 
 function App() {
   return (
