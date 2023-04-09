@@ -1,4 +1,4 @@
-import Final from './tutorial/01-useState/final/05-useState-gotcha';
+import Final from './tutorial/02-useEffect/final/01-code-example';
 
 function App() {
   return (
