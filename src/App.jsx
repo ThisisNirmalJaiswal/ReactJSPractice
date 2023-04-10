@@ -1,4 +1,4 @@
-import Final from './tutorial/03-conditional-rendering/final/01-multiple-returns-basics';
+import Final from './tutorial/03-conditional-rendering/final/02-multiple-returns-fetch-data';
 
 function App() {
   return (
