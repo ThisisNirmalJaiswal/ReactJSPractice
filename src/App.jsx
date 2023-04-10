@@ -1,4 +1,4 @@
-import Final from './tutorial/03-conditional-rendering/final/03-hooks-rule';
+import Final from './tutorial/03-conditional-rendering/final/04-short-circuit-overview';
 
 function App() {
   return (
