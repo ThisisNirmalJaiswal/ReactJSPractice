@@ -1,10 +1,9 @@
-import List from './tutorial/05-leverage-javascript/starter/List';
+import ControlledInputs from './tutorial/06-forms/final/01-controlled-inputs';
 
 function App() {
   return (
     <div className='container'>
-      <h1>Leverage Javascript</h1>
-      <List />
+      <ControlledInputs />
     </div>
   );
 }
