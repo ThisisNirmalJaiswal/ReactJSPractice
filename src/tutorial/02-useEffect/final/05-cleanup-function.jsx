@@ -43,7 +43,11 @@ const CleanupFunction = () => {
 
 const RandomComponent = () => {
   useEffect(() => {
-    console.log('hmm, there is interesting');
+    const someFunc = () => {
+      // some logic
+    };
+    window.addEventListener('scroll', someFunc);
+    return () => window.removeEventListener('scroll', someFunc);
   }, []);
   return <h1>Hello There</h1>;
 };
