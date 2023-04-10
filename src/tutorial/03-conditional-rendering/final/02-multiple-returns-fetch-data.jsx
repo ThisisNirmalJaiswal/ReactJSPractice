@@ -68,7 +68,6 @@ const MultipleReturnsFetchData = () => {
         if (!resp.ok) {
           setIsError(true);
           setIsLoading(false);
-
           return <h1>Loading </h1>;
         }
         const user = await resp.json();
@@ -87,16 +86,18 @@ const MultipleReturnsFetchData = () => {
   if (isError) {
     return <h1>ERROR!!!!!!</h1>;
   }
+  const { avatar_url, name, company, bio } = user;
+
   return (
     <div>
       <img
         style={{ width: '150px', borderRadius: '25px' }}
-        src={user.avatar_url}
+        src={avatar_url}
         alt='Avatar'
       />
-      <h1>{user.name}</h1>
-      <h4>Works at {user.company}</h4>
-      <p>{user.bio} </p>
+      <h1>{name}</h1>
+      <h4>Works at {company}</h4>
+      <p>{bio} </p>
     </div>
   );
 };
