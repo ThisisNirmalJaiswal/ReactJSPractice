@@ -1,9 +1,11 @@
-import ControlledInputs from './tutorial/08-custom-hooks/starter/02-fetch-data';
+import Starter from './tutorial/09-context-api/starter/context/Navbar';
+import Final from './tutorial/09-context-api/final/context/Navbar';
 
 function App() {
   return (
-    <div className='container'>
-      <ControlledInputs />
+    <div>
+      <Final />
+      <Starter />
     </div>
   );
 }
