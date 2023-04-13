@@ -1,7 +1,7 @@
 import useToggle from './useToggle';
 
 const ToggleExample = () => {
-  const { show, toggle } = useToggle(true);
+  const [show, toggle] = useToggle(false);
   return (
     <div>
       <h4>toggle custom hook</h4>
