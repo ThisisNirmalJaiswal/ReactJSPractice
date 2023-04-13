@@ -1,4 +1,4 @@
-import ControlledInputs from './tutorial/06-forms/final/04-other-inputs';
+import ControlledInputs from './tutorial/06-forms/final/05-form-data';
 
 function App() {
   return (
