@@ -8,5 +8,5 @@ const Example = () => {
       <SecondComponent />
     </div>
   );
-};
+}; 
 export default Example;
